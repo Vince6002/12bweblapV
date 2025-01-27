@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12bweboldal</title>
+    <title>12b Weboldal</title>
+    <style>
+        /* Színek és animációk */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff69b4, #1e90ff);
+            color: white;
+            margin: 0;
+            padding: 0;
+            animation: colorCycle 10s infinite alternate;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            padding-top: 20vh;
+            color: #ffff00;
+            animation: bounce 2s infinite;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes colorCycle {
+            0% { background: linear-gradient(135deg, #ff69b4, #1e90ff); }
+            25% { background: linear-gradient(135deg, #32cd32, #ff6347); }
+            50% { background: linear-gradient(135deg, #ff4500, #ffff00); }
+            75% { background: linear-gradient(135deg, #9370db, #ff1493); }
+            100% { background: linear-gradient(135deg, #1e90ff, #ff69b4); }
+        }
+    </style>
 </head>
 <body>
-    <h1> 12b masodik weboldala</h1>
-    Első a Google volt
+    <h1>12b második weboldala</h1>
+    <p>Első a Google volt</p>
 </body>
 </html>
